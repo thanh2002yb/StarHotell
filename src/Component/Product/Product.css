@@ -1,0 +1,55 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.product-item {
+  box-shadow: 5px 10px 18px #C0C0C0;
+  padding: 20px;
+}
+
+.hotel_img img {
+  width: 100%;
+  height: auto;
+}
+
+.star {
+  display: flex;
+  justify-content: center;
+}
+
+.star .checked {
+  color: yellow;
+}
+
+.price-discount {
+  display: flex;
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 16px; /* Điều chỉnh kích thước font cho thiết bị di động */
+    margin: 0; /* Loại bỏ margin mặc định */
+    padding: 0; /* Loại bỏ padding mặc định */
+  }
+  .product-grid { 
+    grid-gap: 10px; /* Reduce gap between items for smaller screens */
+    width: 30%; /* Full width on mobile screens */
+  }
+  .product-item {
+    box-shadow: 5px 10px 18px #C0C0C0;
+    padding: 20px;
+    text-align: center;
+    width: 109px;
+    height: 190px;
+  }
+  .price-discount {
+    display: flex;
+    align-items: center;
+    font-size: 7px;
+    margin: -20px 0 0 -6px;
+}
+}
